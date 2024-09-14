@@ -17,7 +17,7 @@ struct Facility: Identifiable {
         "Beginners": "1.circle",
         "Cross-country": "map",
         "Eco-friendly": "leaf.arrow.circlepath",
-        "Family": "person.3"
+        "Family": "figure.2.and.child.holdinghands"
     ]
     
     private let descriptions = [

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E91248562C95D1BB00C6AFE6 /* SwiftFlags in Frameworks */ = {isa = PBXBuildFile; productRef = E91248552C95D1BB00C6AFE6 /* SwiftFlags */; };
 		E92745202C938C5200417B04 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E927451F2C938C5200417B04 /* Facility.swift */; };
 		E92745222C938FEA00417B04 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92745212C938FEA00417B04 /* Favorites.swift */; };
 		E93F16F42C8F1C5E00B9ABCB /* SnowSeekerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93F16F32C8F1C5E00B9ABCB /* SnowSeekerApp.swift */; };
@@ -44,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91248562C95D1BB00C6AFE6 /* SwiftFlags in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +112,9 @@
 			dependencies = (
 			);
 			name = SnowSeeker;
+			packageProductDependencies = (
+				E91248552C95D1BB00C6AFE6 /* SwiftFlags */,
+			);
 			productName = SnowSeeker;
 			productReference = E93F16F02C8F1C5E00B9ABCB /* SnowSeeker.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +143,9 @@
 				Base,
 			);
 			mainGroup = E93F16E72C8F1C5D00B9ABCB;
+			packageReferences = (
+				E91248542C95D1BB00C6AFE6 /* XCRemoteSwiftPackageReference "SwiftFlags" */,
+			);
 			productRefGroup = E93F16F12C8F1C5E00B9ABCB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -380,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E91248542C95D1BB00C6AFE6 /* XCRemoteSwiftPackageReference "SwiftFlags" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BubiDevs/SwiftFlags.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E91248552C95D1BB00C6AFE6 /* SwiftFlags */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E91248542C95D1BB00C6AFE6 /* XCRemoteSwiftPackageReference "SwiftFlags" */;
+			productName = SwiftFlags;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E93F16E82C8F1C5D00B9ABCB /* Project object */;
 }

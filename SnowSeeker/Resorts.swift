@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct Resort: Codable, Hashable, Identifiable {
+struct Resort: Codable, Hashable, Identifiable, Comparable {
+    static func < (lhs: Resort, rhs: Resort) -> Bool {
+        lhs.name < rhs.name
+    }
+    
     var id: String
     var name: String
     var country: String
